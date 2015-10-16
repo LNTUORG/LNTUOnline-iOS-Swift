@@ -13,9 +13,11 @@ class BaseNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Launch Image
+        
         let launchImageView = UIImageView.init(frame: self.view.frame)
         
-        launchImageView.image = UIImage.init(named: "startimg0" + String(CommonTools.randomInRange(0...6)))
+        launchImageView.image = UIImage.init(named: "startimg0" + String(CommonTools.randomInRange(0...5)))
         
         self.view.addSubview(launchImageView)
         
@@ -29,9 +31,14 @@ class BaseNavigationViewController: UINavigationController {
                     launchImageView.removeFromSuperview()
             })
         }
-
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        self.performSegueWithIdentifier("nav2login", sender: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

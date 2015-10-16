@@ -13,10 +13,76 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="EC9-kY-maS" kind="relationship" relationship="rootViewController" id="egW-tc-axs"/>
+                        <segue destination="7Ni-eq-K25" kind="presentation" identifier="nav2login" id="OYf-S8-rkc"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mg7-6r-VXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226" y="376"/>
+            <point key="canvasLocation" x="-343" y="299"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="dQr-62-UcN">
+            <objects>
+                <viewController id="7Ni-eq-K25" customClass="LoginViewController" customModule="eduadmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SeQ-RE-WtX"/>
+                        <viewControllerLayoutGuide type="bottom" id="jOd-bi-KeC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nM7-ut-Ljt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-ZB-AyR" customClass="CircleImageView" customModule="eduadmin" customModuleProvider="target">
+                                <rect key="frame" x="263" y="104" width="75" height="75"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8Wj-Gd-xCo"/>
+                                    <constraint firstAttribute="width" constant="75" id="RG5-pz-jaw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ec6-ZB-AyR" firstAttribute="top" secondItem="SeQ-RE-WtX" secondAttribute="bottom" constant="84" id="E5F-ZK-zNh"/>
+                            <constraint firstItem="ec6-ZB-AyR" firstAttribute="centerX" secondItem="nM7-ut-Ljt" secondAttribute="centerX" id="H8E-9s-U8a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMg-Iy-xhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="993"/>
+        </scene>
+        <!--Index View Controller-->
+        <scene sceneID="uKp-Y3-lqf">
+            <objects>
+                <viewController id="EC9-kY-maS" customClass="IndexViewController" customModule="eduadmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YXS-z6-6dd"/>
+                        <viewControllerLayoutGuide type="bottom" id="mGX-li-rZ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ael-fa-dSH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELR-Mf-178">
+                                <rect key="frame" x="39" y="106" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qmF-27-LmM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGH-k1-pgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="299"/>
         </scene>
     </scenes>
 </document>
