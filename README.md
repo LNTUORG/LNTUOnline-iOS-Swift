@@ -1,9 +1,10 @@
 Liaoning Technical University(LNTU) Education Administration Management System App for iOS via Swift.
 ---
 
-## In Development
+## Notice
 
-**The master branch is't a stable version but run without crash.**
+* **The master branch isn't a stable version but run without crash.**
+* **This project only be used for storing clean code, I have no idea if this App would got a stable version.**
 
 ## Licence
 
@@ -37,6 +38,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 - iOS 8.0+
 - Xcode 7
+- CocoaPods
 
 ## Feature
 
