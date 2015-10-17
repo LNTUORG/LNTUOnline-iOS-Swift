@@ -1,6 +1,10 @@
 Liaoning Technical University(LNTU) Education Administration Management System App for iOS via Swift.
 ---
 
+## In Development
+
+**The master branch is't a stable version but run without crash.**
+
 ## Licence
 
 Under General Public License version 2 ([GPLv2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)).
