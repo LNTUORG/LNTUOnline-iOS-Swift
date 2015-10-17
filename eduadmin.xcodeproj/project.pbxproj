@@ -105,6 +105,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		712073A01BD232530099CA86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		714C3AB61BD116CA0061B365 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +132,9 @@
 		7157031E1BD0FAD2001DF922 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				715703201BD104AE001DF922 /* RootControllers */,
+				715703211BD104F6001DF922 /* BaseNavigationViewController.swift */,
+				714C3ABB1BD1186F0061B365 /* IndexViewController.swift */,
+				714C3AB91BD118510061B365 /* LoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -139,16 +148,6 @@
 				716EB6551BD0F3A80095C4F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		715703201BD104AE001DF922 /* RootControllers */ = {
-			isa = PBXGroup;
-			children = (
-				715703211BD104F6001DF922 /* BaseNavigationViewController.swift */,
-				714C3ABB1BD1186F0061B365 /* IndexViewController.swift */,
-				714C3AB91BD118510061B365 /* LoginViewController.swift */,
-			);
-			name = RootControllers;
 			sourceTree = "<group>";
 		};
 		715703231BD11025001DF922 /* Util */ = {
@@ -185,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				716EB64D1BD0F3A80095C4F9 /* Main.storyboard */,
+				712073A01BD232530099CA86 /* Models */,
 				714C3ABD1BD15F340061B365 /* Views */,
 				7157031E1BD0FAD2001DF922 /* Controllers */,
 				715703231BD11025001DF922 /* Util */,

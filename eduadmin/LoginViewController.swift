@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
+    
+    
+    @IBOutlet weak var userNameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +28,33 @@ class LoginViewController: UIViewController {
         
     }
     
+    // MARK: - Actions
+    
+    
+    @IBAction func loginAction() {
+        
+        CommonTools.storeUserDefaultValueForKey(Constants.UserInfo.USER_NAME_KEY, value: self.userNameTextField.text!)
+        CommonTools.storeUserDefaultValueForKey(Constants.UserInfo.PASSWORD_KEY, value: self.passwordTextField.text!)
+        
+        let param = [
+            "userId": self.userNameTextField.text!,
+            "password": self.passwordTextField.text!
+        ]
+        
+        Alamofire.request(.POST, Constants.ROOT_URL + "account/login", parameters: param).responseJSON { (response: Response<AnyObject, NSError>) -> Void in
+            
+            switch response.result {
+                
+            case .Success:
+                
+                print(response)
 
+            case .Failure(let error):
+                print(error)
+        }
 
+        }
+    }
     /*
     // MARK: - Navigation
 

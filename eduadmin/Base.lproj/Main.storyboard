@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vfD-0Y-RjT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Base Navigation View Controller-->
@@ -42,14 +43,90 @@
                                     <constraint firstAttribute="width" constant="75" id="RG5-pz-jaw"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="你的学号" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-WA-ahE">
+                                <rect key="frame" x="20" y="212" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uUH-9d-Q0p"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Koy-Wc-dp5">
+                                <rect key="frame" x="20" y="242" width="560" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xBt-yP-baw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4T-dv-FnL">
+                                <rect key="frame" x="20" y="280" width="560" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="UIv-Af-zof"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="教务处密码" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="epz-wy-HH5">
+                                <rect key="frame" x="20" y="250" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aDo-mf-Qxb"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT7-6X-plg">
+                                <rect key="frame" x="167" y="305" width="266" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.56638695098710379" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="8BR-Xb-inb"/>
+                                    <constraint firstAttribute="width" constant="266" id="xxy-25-dAG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction" destination="7Ni-eq-K25" eventType="touchUpInside" id="vY6-h4-MqH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="epz-wy-HH5" firstAttribute="leading" secondItem="nM7-ut-Ljt" secondAttribute="leadingMargin" id="34k-nL-WYQ"/>
+                            <constraint firstItem="oT7-6X-plg" firstAttribute="centerX" secondItem="nM7-ut-Ljt" secondAttribute="centerX" id="4aK-Bk-4yH"/>
+                            <constraint firstItem="Koy-Wc-dp5" firstAttribute="leading" secondItem="nM7-ut-Ljt" secondAttribute="leadingMargin" id="8Ox-mE-H5f"/>
                             <constraint firstItem="ec6-ZB-AyR" firstAttribute="top" secondItem="SeQ-RE-WtX" secondAttribute="bottom" constant="84" id="E5F-ZK-zNh"/>
                             <constraint firstItem="ec6-ZB-AyR" firstAttribute="centerX" secondItem="nM7-ut-Ljt" secondAttribute="centerX" id="H8E-9s-U8a"/>
+                            <constraint firstItem="epz-wy-HH5" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="OK5-K6-Aqr"/>
+                            <constraint firstItem="Y4T-dv-FnL" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="YWz-NP-Iqg"/>
+                            <constraint firstItem="eUa-WA-ahE" firstAttribute="leading" secondItem="nM7-ut-Ljt" secondAttribute="leadingMargin" id="bKr-Oo-90M"/>
+                            <constraint firstItem="Koy-Wc-dp5" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="dAy-ew-EAz"/>
+                            <constraint firstItem="eUa-WA-ahE" firstAttribute="top" secondItem="ec6-ZB-AyR" secondAttribute="bottom" constant="33" id="dr5-Ad-XWa"/>
+                            <constraint firstItem="Y4T-dv-FnL" firstAttribute="top" secondItem="epz-wy-HH5" secondAttribute="bottom" id="egf-6x-HIv"/>
+                            <constraint firstItem="Y4T-dv-FnL" firstAttribute="leading" secondItem="nM7-ut-Ljt" secondAttribute="leadingMargin" id="hgJ-80-i4y"/>
+                            <constraint firstItem="oT7-6X-plg" firstAttribute="top" secondItem="Y4T-dv-FnL" secondAttribute="bottom" constant="24" id="lSd-MC-v4M"/>
+                            <constraint firstItem="epz-wy-HH5" firstAttribute="top" secondItem="Koy-Wc-dp5" secondAttribute="bottom" constant="7" id="oIR-zU-eYr"/>
+                            <constraint firstItem="eUa-WA-ahE" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="qCK-nb-B3U"/>
+                            <constraint firstItem="Koy-Wc-dp5" firstAttribute="top" secondItem="eUa-WA-ahE" secondAttribute="bottom" id="rvP-Yf-SeB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="epz-wy-HH5" id="5fc-LF-m6U"/>
+                        <outlet property="userNameTextField" destination="eUa-WA-ahE" id="4yX-of-ivB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMg-Iy-xhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

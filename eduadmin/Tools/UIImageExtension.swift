@@ -56,6 +56,7 @@ public extension UIImage {
         return clipImage
     }
     
+    
     /**
     Crop an image to circle.
     

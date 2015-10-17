@@ -9,3 +9,4 @@ platform :ios, '8.0'
 use_frameworks!
 
 pod 'CryptoSwift', :git => "https://github.com/krzyzanowskim/CryptoSwift", :branch => "master"
+pod 'AlamofireObjectMapper', '~> 1.0'
