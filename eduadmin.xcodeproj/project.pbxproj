@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7120739B1BD20FD80099CA86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7120739A1BD20FD80099CA86 /* QuartzCore.framework */; };
+		7120739D1BD20FFE0099CA86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7120739C1BD20FFE0099CA86 /* CoreGraphics.framework */; };
+		7120739F1BD211220099CA86 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120739E1BD211220099CA86 /* UIImageExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		714C3AB81BD116CA0061B365 /* CommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C3AB71BD116CA0061B365 /* CommonTools.swift */; settings = {ASSET_TAGS = (); }; };
 		714C3ABA1BD118510061B365 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C3AB91BD118510061B365 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		714C3ABC1BD1186F0061B365 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C3ABB1BD1186F0061B365 /* IndexViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		714C3ABF1BD15F5F0061B365 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C3ABE1BD15F5F0061B365 /* CircleImageView.swift */; settings = {ASSET_TAGS = (); }; };
+		714C3ABF1BD15F5F0061B365 /* CircleHeadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714C3ABE1BD15F5F0061B365 /* CircleHeadImageView.swift */; settings = {ASSET_TAGS = (); }; };
 		715703221BD104F6001DF922 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715703211BD104F6001DF922 /* BaseNavigationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		716EB64A1BD0F3A80095C4F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716EB6491BD0F3A80095C4F9 /* AppDelegate.swift */; };
 		716EB64F1BD0F3A80095C4F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716EB64D1BD0F3A80095C4F9 /* Main.storyboard */; };
@@ -40,10 +43,13 @@
 
 /* Begin PBXFileReference section */
 		65A56079F2D83A54B79DB4B5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7120739A1BD20FD80099CA86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7120739C1BD20FFE0099CA86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7120739E1BD211220099CA86 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		714C3AB71BD116CA0061B365 /* CommonTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTools.swift; sourceTree = "<group>"; };
 		714C3AB91BD118510061B365 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		714C3ABB1BD1186F0061B365 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
-		714C3ABE1BD15F5F0061B365 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		714C3ABE1BD15F5F0061B365 /* CircleHeadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleHeadImageView.swift; sourceTree = "<group>"; };
 		715703211BD104F6001DF922 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		716EB6461BD0F3A80095C4F9 /* eduadmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eduadmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716EB6491BD0F3A80095C4F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7120739D1BD20FFE0099CA86 /* CoreGraphics.framework in Frameworks */,
+				7120739B1BD20FD80099CA86 /* QuartzCore.framework in Frameworks */,
 				851A9375331CE147F9035C6B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +98,8 @@
 		112C11490D6FD18CBD717C6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7120739C1BD20FFE0099CA86 /* CoreGraphics.framework */,
+				7120739A1BD20FD80099CA86 /* QuartzCore.framework */,
 				93D68C4CBE7E84DAA64B535F /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				714C3AB71BD116CA0061B365 /* CommonTools.swift */,
+				7120739E1BD211220099CA86 /* UIImageExtension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -106,7 +117,7 @@
 		714C3ABD1BD15F340061B365 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				714C3ABE1BD15F5F0061B365 /* CircleImageView.swift */,
+				714C3ABE1BD15F5F0061B365 /* CircleHeadImageView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -393,9 +404,10 @@
 			files = (
 				714C3ABA1BD118510061B365 /* LoginViewController.swift in Sources */,
 				716EB64A1BD0F3A80095C4F9 /* AppDelegate.swift in Sources */,
+				7120739F1BD211220099CA86 /* UIImageExtension.swift in Sources */,
 				714C3AB81BD116CA0061B365 /* CommonTools.swift in Sources */,
 				715703221BD104F6001DF922 /* BaseNavigationViewController.swift in Sources */,
-				714C3ABF1BD15F5F0061B365 /* CircleImageView.swift in Sources */,
+				714C3ABF1BD15F5F0061B365 /* CircleHeadImageView.swift in Sources */,
 				714C3ABC1BD1186F0061B365 /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
