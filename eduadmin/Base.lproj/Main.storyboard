@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vfD-0Y-RjT">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -31,7 +32,7 @@
                         <viewControllerLayoutGuide type="top" id="SeQ-RE-WtX"/>
                         <viewControllerLayoutGuide type="bottom" id="jOd-bi-KeC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nM7-ut-Ljt">
+                    <view key="view" contentMode="scaleToFill" id="nM7-ut-Ljt" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -101,6 +102,19 @@
                                     <action selector="loginAction" destination="7Ni-eq-K25" eventType="touchUpInside" id="vY6-h4-MqH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb2-4R-a92">
+                                <rect key="frame" x="252" y="349" width="96" height="17"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="3Tu-AG-86P"/>
+                                    <constraint firstAttribute="width" constant="96" id="cKA-En-jqh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="登录遇到问题？"/>
+                                <connections>
+                                    <action selector="askForHelp" destination="7Ni-eq-K25" eventType="touchUpInside" id="Q9A-f0-NK8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,8 +125,10 @@
                             <constraint firstItem="ec6-ZB-AyR" firstAttribute="top" secondItem="SeQ-RE-WtX" secondAttribute="bottom" constant="84" id="E5F-ZK-zNh"/>
                             <constraint firstItem="ec6-ZB-AyR" firstAttribute="centerX" secondItem="nM7-ut-Ljt" secondAttribute="centerX" id="H8E-9s-U8a"/>
                             <constraint firstItem="epz-wy-HH5" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="OK5-K6-Aqr"/>
+                            <constraint firstItem="Rb2-4R-a92" firstAttribute="top" secondItem="oT7-6X-plg" secondAttribute="bottom" constant="8" id="YL3-6L-Wfa"/>
                             <constraint firstItem="Y4T-dv-FnL" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="YWz-NP-Iqg"/>
                             <constraint firstItem="eUa-WA-ahE" firstAttribute="leading" secondItem="nM7-ut-Ljt" secondAttribute="leadingMargin" id="bKr-Oo-90M"/>
+                            <constraint firstItem="Rb2-4R-a92" firstAttribute="centerX" secondItem="nM7-ut-Ljt" secondAttribute="centerX" id="bUR-8n-qXp"/>
                             <constraint firstItem="Koy-Wc-dp5" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="dAy-ew-EAz"/>
                             <constraint firstItem="eUa-WA-ahE" firstAttribute="top" secondItem="ec6-ZB-AyR" secondAttribute="bottom" constant="33" id="dr5-Ad-XWa"/>
                             <constraint firstItem="Y4T-dv-FnL" firstAttribute="top" secondItem="epz-wy-HH5" secondAttribute="bottom" id="egf-6x-HIv"/>
@@ -122,6 +138,9 @@
                             <constraint firstItem="eUa-WA-ahE" firstAttribute="trailing" secondItem="nM7-ut-Ljt" secondAttribute="trailingMargin" id="qCK-nb-B3U"/>
                             <constraint firstItem="Koy-Wc-dp5" firstAttribute="top" secondItem="eUa-WA-ahE" secondAttribute="bottom" id="rvP-Yf-SeB"/>
                         </constraints>
+                        <connections>
+                            <action selector="exitEditing" destination="7Ni-eq-K25" eventType="touchDown" id="TRJ-MK-dme"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="epz-wy-HH5" id="5fc-LF-m6U"/>
@@ -144,8 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELR-Mf-178">
-                                <rect key="frame" x="39" y="106" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELR-Mf-178">
+                                <rect key="frame" x="20" y="93" width="86" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

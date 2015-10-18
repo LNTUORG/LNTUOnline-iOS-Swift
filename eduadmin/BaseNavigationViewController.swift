@@ -29,15 +29,18 @@ class BaseNavigationViewController: UINavigationController {
                 }, completion: { (Bool) -> Void in
                     
                     launchImageView.removeFromSuperview()
+                    
+                    if let token = Constants.LOGIN_TOKEN {
+                        
+                        print(token)
+                    } else {
+                        
+                        self.performSegueWithIdentifier("nav2login", sender: nil)
+                    }
             })
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
-        
-        super.viewDidAppear(animated)
-        self.performSegueWithIdentifier("nav2login", sender: nil)
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

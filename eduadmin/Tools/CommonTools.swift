@@ -11,7 +11,13 @@ import UIKit
 struct Constants {
     
     static let ROOT_URL = "https://api.online.lntu.org/"
-    static let LOGIN_TOKEN = CommonTools.valueForKey(Constants.UserInfo.LOGIN_TOKEN_KEY)
+    
+    static let LOGIN_TOKEN = CommonTools.getUserDefaultValueForKey(Constants.UserInfo.LOGIN_TOKEN_KEY)
+    
+    struct DeveloperInfo {
+        
+        static let QQ = "10771533"
+    }
     
     struct UserInfo {
         static let EXPRES_AT_KEY = "EXPRES_AT"
@@ -20,9 +26,11 @@ struct Constants {
         static let PASSWORD_KEY = "PASSWORD"
     }
     
-    struct NotificationKey {
+    struct Notification {
         
-        static let Welcome = "kWelcomeNotif"
+        static let LOADING = "正在加载中..."
+        static let NETERROR = "服务器被外星人搬走了o(╯□╰)o"
+        static let NULLERROR = "暂无此类数据"
     }
     
     struct Path {
@@ -62,9 +70,16 @@ class CommonTools: NSObject {
         userDefaults.synchronize()
     }
     
-    class func getUserDefaultValueForKey(key: String) -> String {
+    class func getUserDefaultValueForKey(key: String) -> AnyObject? {
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        return userDefaults.valueForKey(key) as! String
+        
+        if (userDefaults.valueForKey(key) == nil) {
+            
+            return nil
+        } else {
+            
+            return userDefaults.valueForKey(key) as! String
+        }
     }
 }
