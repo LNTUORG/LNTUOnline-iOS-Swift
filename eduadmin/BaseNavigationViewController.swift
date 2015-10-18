@@ -30,9 +30,8 @@ class BaseNavigationViewController: UINavigationController {
                     
                     launchImageView.removeFromSuperview()
                     
-                    if let token = Constants.LOGIN_TOKEN {
+                    if let _ = Constants.LOGIN_TOKEN {
                         
-                        print(token)
                     } else {
                         
                         self.performSegueWithIdentifier("nav2login", sender: nil)
