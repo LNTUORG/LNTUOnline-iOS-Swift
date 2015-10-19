@@ -27,21 +27,21 @@ class IndexViewController: BaseViewController {
         
         self.automaticallyAdjustsScrollViewInsets = false
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        setPhotoAndName()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setPhotoAndName() -> Void {
+        
+        print(Constants.Path.Documents)
     }
-    */
 
 }

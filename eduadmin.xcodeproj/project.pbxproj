@@ -199,8 +199,8 @@
 		715703231BD11025001DF922 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				712073A81BD3DEF10099CA86 /* OCFiles */,
 				714C3AB61BD116CA0061B365 /* Tools */,
+				712073A81BD3DEF10099CA86 /* OCFiles */,
 			);
 			name = Util;
 			sourceTree = "<group>";
