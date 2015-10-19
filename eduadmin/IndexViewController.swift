@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class IndexViewController: BaseViewController {
 
     // MARK: - Outlets
     
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -41,7 +46,42 @@ class IndexViewController: BaseViewController {
     
     func setPhotoAndName() -> Void {
         
-        print(Constants.Path.Documents)
+        if "" == Constants.LOGIN_TOKEN {
+            
+        } else {
+            
+            if NSFileManager.defaultManager().fileExistsAtPath(Constants.UserInfoFilePath.USER_INFO_PATH) {
+                
+                let dict = NSDictionary.init(contentsOfFile: Constants.UserInfoFilePath.USER_INFO_PATH)!
+                
+                self.nameLabel.text = (dict["name"] as? String)! + "，你好"
+            } else {
+                
+                Alamofire.request(.GET, Constants.ROOT_URL + "student/~self", headers: Constants.HEADER).responseJSON(completionHandler: { (response: Response<AnyObject, NSError>) -> Void in
+                    
+                    if let dict = response.result.value as? Dictionary<String, AnyObject> {
+                        
+                        if response.response?.statusCode == 401 {
+                            
+                            MBProgressHUD.showError(Constants.Notification.TOKEN_ERROR)
+                        }
+                        if response.response?.statusCode == 400 {
+                            
+                            MBProgressHUD.showError(Constants.Notification.PASSWORD_ERROR)
+                            
+                        } else {
+                            
+                            NSDictionary(dictionary: dict).writeToFile(Constants.UserInfoFilePath.USER_INFO_PATH, atomically: true)
+                            
+                            self.nameLabel.text = (dict["name"] as? String)! + "，你好"
+                        }
+                    }  else {
+                        
+                        MBProgressHUD.showError(Constants.Notification.NET_ERROR)
+                    }
+                })
+            }
+        }
     }
 
 }

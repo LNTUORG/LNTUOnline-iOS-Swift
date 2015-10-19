@@ -22,12 +22,12 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (CommonTools.getUserDefaultValueForKey(Constants.UserInfo.USER_NAME_KEY) == nil || CommonTools.getUserDefaultValueForKey(Constants.UserInfo.PASSWORD_KEY) == nil) {
+        if (CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.USER_NAME_KEY) == "" || CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.PASSWORD_KEY) == "") {
             
         } else {
             
-            userId = (CommonTools.getUserDefaultValueForKey(Constants.UserInfo.USER_NAME_KEY) as? String)!
-            password = (CommonTools.getUserDefaultValueForKey(Constants.UserInfo.PASSWORD_KEY) as? String)!
+            userId = CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.USER_NAME_KEY)
+            password = CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.PASSWORD_KEY)
             
             self.userNameTextField.text = userId
             self.passwordTextField.text = password
@@ -67,8 +67,8 @@ class LoginViewController: BaseViewController {
             return
         }
         
-        CommonTools.storeUserDefaultValueForKey(Constants.UserInfo.USER_NAME_KEY, value: self.userNameTextField.text!)
-        CommonTools.storeUserDefaultValueForKey(Constants.UserInfo.PASSWORD_KEY, value: self.passwordTextField.text!)
+        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.USER_NAME_KEY, value: self.userNameTextField.text!)
+        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.PASSWORD_KEY, value: self.passwordTextField.text!)
         
         let param = [
             "userId": self.userId,
@@ -83,14 +83,14 @@ class LoginViewController: BaseViewController {
                 
                 if response.response?.statusCode == 400 {
                     
-                    MBProgressHUD.showError("用户密码错误")
+                    MBProgressHUD.showError(Constants.Notification.PASSWORD_ERROR)
                     
                 } else {
                     
                     if dict["userType"] as! String == "STUDENT" {
                         
-                        CommonTools.storeUserDefaultValueForKey(Constants.UserInfo.LOGIN_TOKEN_KEY, value: dict["loginToken"] as! String)
-                        CommonTools.storeUserDefaultValueForKey(Constants.UserInfo.EXPRES_AT_KEY, value: dict["expiresAt"] as! String)
+                        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.LOGIN_TOKEN_KEY, value: dict["loginToken"] as! String)
+                        CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.EXPRES_AT_KEY, value: dict["expiresAt"] as! String)
                         MBProgressHUD.showSuccess("登录成功")
                         self.dismissViewControllerAnimated(true, completion: nil)
                         
@@ -102,19 +102,8 @@ class LoginViewController: BaseViewController {
                 
             } else {
                 
-                print(response)
-                MBProgressHUD.showError(Constants.Notification.NETERROR)
+                MBProgressHUD.showError(Constants.Notification.NET_ERROR)
             }
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

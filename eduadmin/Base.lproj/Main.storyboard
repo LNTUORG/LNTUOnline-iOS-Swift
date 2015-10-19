@@ -549,6 +549,7 @@
                         <barButtonItem key="rightBarButtonItem" image="Setting" id="g7w-dX-A67"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="nameLabel" destination="rne-TT-doe" id="8Sg-AN-mYh"/>
                         <outlet property="scrollView" destination="wj0-8A-2Mf" id="kr3-nb-FJX"/>
                     </connections>
                 </viewController>
