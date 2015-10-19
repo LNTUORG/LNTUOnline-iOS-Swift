@@ -8,8 +8,20 @@
 
 import UIKit
 
-class IndexViewController: UIViewController {
+class IndexViewController: BaseViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.scrollView.showsHorizontalScrollIndicator = false
+        self.scrollView.showsVerticalScrollIndicator = false
+        self.scrollView.alwaysBounceVertical = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

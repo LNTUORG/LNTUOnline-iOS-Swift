@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     var userId = ""
     var password = ""
@@ -21,8 +21,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "veins")!)
         
         if (CommonTools.getUserDefaultValueForKey(Constants.UserInfo.USER_NAME_KEY) == nil || CommonTools.getUserDefaultValueForKey(Constants.UserInfo.PASSWORD_KEY) == nil) {
             
@@ -65,6 +63,7 @@ class LoginViewController: UIViewController {
         
         if (self.userId.length + self.password.length <= 7) {
             
+            MBProgressHUD.showError("补全信息后再登录")
             return
         }
         

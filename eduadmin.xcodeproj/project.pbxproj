@@ -26,6 +26,9 @@
 		716EB6541BD0F3A80095C4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716EB6521BD0F3A80095C4F9 /* LaunchScreen.storyboard */; };
 		716EB65F1BD0F3A80095C4F9 /* eduadminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716EB65E1BD0F3A80095C4F9 /* eduadminTests.swift */; };
 		716EB66A1BD0F3A80095C4F9 /* eduadminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716EB6691BD0F3A80095C4F9 /* eduadminUITests.swift */; };
+		71BD2BB11BD482B600D6C966 /* IndexHelloLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD2BB01BD482B600D6C966 /* IndexHelloLabel.swift */; settings = {ASSET_TAGS = (); }; };
+		71BD2BB31BD4861F00D6C966 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD2BB21BD4861F00D6C966 /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71BD2BB51BD4884E00D6C966 /* IndexControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD2BB41BD4884E00D6C966 /* IndexControl.swift */; settings = {ASSET_TAGS = (); }; };
 		851A9375331CE147F9035C6B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D68C4CBE7E84DAA64B535F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +79,9 @@
 		716EB6651BD0F3A80095C4F9 /* eduadminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eduadminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		716EB6691BD0F3A80095C4F9 /* eduadminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eduadminUITests.swift; sourceTree = "<group>"; };
 		716EB66B1BD0F3A80095C4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BD2BB01BD482B600D6C966 /* IndexHelloLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexHelloLabel.swift; sourceTree = "<group>"; };
+		71BD2BB21BD4861F00D6C966 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		71BD2BB41BD4884E00D6C966 /* IndexControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexControl.swift; sourceTree = "<group>"; };
 		73EC79C2D7F82038ED62B251 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		93D68C4CBE7E84DAA64B535F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				714C3ABE1BD15F5F0061B365 /* CircleHeadImageView.swift */,
+				71BD2BB01BD482B600D6C966 /* IndexHelloLabel.swift */,
+				71BD2BB41BD4884E00D6C966 /* IndexControl.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				715703211BD104F6001DF922 /* BaseNavigationViewController.swift */,
+				71BD2BB21BD4861F00D6C966 /* BaseViewController.swift */,
 				714C3ABB1BD1186F0061B365 /* IndexViewController.swift */,
 				714C3AB91BD118510061B365 /* LoginViewController.swift */,
 			);
@@ -453,7 +462,10 @@
 				714C3ABA1BD118510061B365 /* LoginViewController.swift in Sources */,
 				716EB64A1BD0F3A80095C4F9 /* AppDelegate.swift in Sources */,
 				712073BA1BD3E1990099CA86 /* MBProgressHUD+LJ.m in Sources */,
+				71BD2BB51BD4884E00D6C966 /* IndexControl.swift in Sources */,
 				7120739F1BD211220099CA86 /* UIImageExtension.swift in Sources */,
+				71BD2BB11BD482B600D6C966 /* IndexHelloLabel.swift in Sources */,
+				71BD2BB31BD4861F00D6C966 /* BaseViewController.swift in Sources */,
 				714C3AB81BD116CA0061B365 /* CommonTools.swift in Sources */,
 				712073A61BD3DC7E0099CA86 /* StringExtension.swift in Sources */,
 				715703221BD104F6001DF922 /* BaseNavigationViewController.swift in Sources */,

@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="height" constant="1" id="xBt-yP-baw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4T-dv-FnL">
@@ -73,7 +73,7 @@
                                     <constraint firstAttribute="height" constant="1" id="UIv-Af-zof"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="教务处密码" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="epz-wy-HH5">
@@ -166,7 +166,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wj0-8A-2Mf">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nw0-Tg-pXq" customClass="UIControl">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nw0-Tg-pXq" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="-130" width="600" height="240"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Yk2-M6-iha">
@@ -185,7 +185,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="VtR-SC-iB6"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中午养足了精神吗?让我们一起渡过一个愉快的下午茶时间,不过没有茶喝o(╯□╰)o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iM-PB-1jG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中午养足了精神吗?让我们一起渡过一个愉快的下午茶时间,不过没有茶喝o(╯□╰)o" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iM-PB-1jG" customClass="IndexHelloLabel" customModule="eduadmin" customModuleProvider="target">
                                                 <rect key="frame" x="108" y="172" width="430" height="60"/>
                                                 <animations/>
                                                 <constraints>
@@ -224,7 +224,7 @@
                                             <constraint firstItem="4iM-PB-1jG" firstAttribute="top" secondItem="rne-TT-doe" secondAttribute="bottom" constant="5" id="uU1-s5-yUo"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aog-hk-36y" customClass="UIControl">
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aog-hk-36y" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="111" width="199.5" height="120"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="dOo-qM-cbT">
@@ -257,7 +257,7 @@
                                             <constraint firstAttribute="centerX" secondItem="lH1-XQ-S64" secondAttribute="centerX" id="hhn-S9-5ci"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiH-ve-yVN" customClass="UIControl">
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiH-ve-yVN" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
                                         <rect key="frame" x="200" y="111" width="199" height="120"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教务公告" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-Pp-v3u">
@@ -288,7 +288,7 @@
                                             <constraint firstAttribute="height" constant="120" id="zeP-CU-Apf"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdX-KQ-m4P" customClass="UIControl">
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdX-KQ-m4P" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
                                         <rect key="frame" x="400" y="111" width="199.5" height="120"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="WSV-t4-rbq">
@@ -319,7 +319,7 @@
                                             <constraint firstAttribute="height" constant="120" id="e5D-bQ-Wus"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLC-DZ-ucI" customClass="UIControl">
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLC-DZ-ucI" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="232" width="199.5" height="120"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成绩查询" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-2s-CbS">
@@ -350,7 +350,7 @@
                                             <constraint firstItem="vMt-2s-CbS" firstAttribute="top" secondItem="XTY-Yt-gwQ" secondAttribute="bottom" constant="8" id="hWa-1p-d7a"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZb-Io-G0X" customClass="UIControl">
+                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZb-Io-G0X" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
                                         <rect key="frame" x="200" y="232" width="199" height="120"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试安排" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE1-Iq-NvK">
@@ -381,76 +381,7 @@
                                             <constraint firstItem="z2G-Xo-vNt" firstAttribute="top" secondItem="eZb-Io-G0X" secondAttribute="top" constant="15" id="psV-op-dp9"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXH-gX-RKJ" customClass="UIControl">
-                                        <rect key="frame" x="200" y="353" width="199" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享软件" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAW-tt-TBT">
-                                                <rect key="frame" x="42" y="14" width="114" height="41"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="41" id="0Wa-ZX-pZR"/>
-                                                    <constraint firstAttribute="width" constant="114" id="R4V-WY-KAp"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="0.4858022098" green="0.4457563376" blue="0.86591198979999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="fKY-yI-RzX"/>
-                                            <constraint firstAttribute="centerX" secondItem="EAW-tt-TBT" secondAttribute="centerX" id="hGb-4a-fpu"/>
-                                            <constraint firstAttribute="centerY" secondItem="EAW-tt-TBT" secondAttribute="centerY" id="oR6-rk-4py"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-L8-Iab" customClass="UIControl">
-                                        <rect key="frame" x="0.0" y="353" width="199.5" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生活专区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKZ-m3-rhU">
-                                                <rect key="frame" x="42" y="14" width="114" height="41"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="41" id="Ft4-ug-9Do"/>
-                                                    <constraint firstAttribute="width" constant="114" id="e6Y-No-5ts"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="0.4858022098" green="0.4457563376" blue="0.86591198979999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="bSQ-PN-Ia3"/>
-                                            <constraint firstAttribute="centerY" secondItem="kKZ-m3-rhU" secondAttribute="centerY" id="imt-fA-Yvz"/>
-                                            <constraint firstAttribute="centerX" secondItem="kKZ-m3-rhU" secondAttribute="centerX" id="m84-XB-zxF"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZJ-fp-znP" customClass="UIControl">
-                                        <rect key="frame" x="400" y="353" width="200" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一键评课" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fla-wQ-PQC">
-                                                <rect key="frame" x="43" y="14" width="114" height="41"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="114" id="Qjo-4o-bws"/>
-                                                    <constraint firstAttribute="height" constant="41" id="cis-zB-yR9"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="0.4858022098" green="0.4457563376" blue="0.86591198979999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="centerY" secondItem="Fla-wQ-PQC" secondAttribute="centerY" id="D4i-bS-2te"/>
-                                            <constraint firstAttribute="height" constant="70" id="NY6-di-W0P"/>
-                                            <constraint firstAttribute="centerX" secondItem="Fla-wQ-PQC" secondAttribute="centerX" id="jyr-sF-bRl"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vl-Ja-Jgi" customClass="UIControl">
+                                    <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vl-Ja-Jgi" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
                                         <rect key="frame" x="400" y="232" width="199.5" height="120"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等级考试" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZS-kX-3sn">
@@ -481,9 +412,78 @@
                                             <constraint firstItem="UZS-kX-3sn" firstAttribute="top" secondItem="WNI-f5-vxM" secondAttribute="bottom" constant="8" id="nSp-aZ-3lK"/>
                                         </constraints>
                                     </view>
+                                    <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-L8-Iab" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="353" width="199.5" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生活专区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKZ-m3-rhU">
+                                                <rect key="frame" x="42" y="14" width="114" height="41"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="Ft4-ug-9Do"/>
+                                                    <constraint firstAttribute="width" constant="114" id="e6Y-No-5ts"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.4858022098" green="0.4457563376" blue="0.86591198979999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="bSQ-PN-Ia3"/>
+                                            <constraint firstAttribute="centerY" secondItem="kKZ-m3-rhU" secondAttribute="centerY" id="imt-fA-Yvz"/>
+                                            <constraint firstAttribute="centerX" secondItem="kKZ-m3-rhU" secondAttribute="centerX" id="m84-XB-zxF"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXH-gX-RKJ" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="353" width="199" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享软件" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAW-tt-TBT">
+                                                <rect key="frame" x="42" y="14" width="114" height="41"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="0Wa-ZX-pZR"/>
+                                                    <constraint firstAttribute="width" constant="114" id="R4V-WY-KAp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.4858022098" green="0.4457563376" blue="0.86591198979999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="fKY-yI-RzX"/>
+                                            <constraint firstAttribute="centerX" secondItem="EAW-tt-TBT" secondAttribute="centerX" id="hGb-4a-fpu"/>
+                                            <constraint firstAttribute="centerY" secondItem="EAW-tt-TBT" secondAttribute="centerY" id="oR6-rk-4py"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZJ-fp-znP" customClass="IndexControl" customModule="eduadmin" customModuleProvider="target">
+                                        <rect key="frame" x="400" y="353" width="200" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一键评课" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fla-wQ-PQC">
+                                                <rect key="frame" x="43" y="14" width="114" height="41"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="114" id="Qjo-4o-bws"/>
+                                                    <constraint firstAttribute="height" constant="41" id="cis-zB-yR9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.4858022098" green="0.4457563376" blue="0.86591198979999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="Fla-wQ-PQC" secondAttribute="centerY" id="D4i-bS-2te"/>
+                                            <constraint firstAttribute="height" constant="70" id="NY6-di-W0P"/>
+                                            <constraint firstAttribute="centerX" secondItem="Fla-wQ-PQC" secondAttribute="centerX" id="jyr-sF-bRl"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="sZJ-fp-znP" firstAttribute="leading" secondItem="oXH-gX-RKJ" secondAttribute="trailing" constant="1" id="09q-KV-dgV"/>
                                     <constraint firstItem="xXd-L8-Iab" firstAttribute="top" secondItem="tLC-DZ-ucI" secondAttribute="bottom" constant="1" id="2fM-Xe-94q"/>
@@ -536,7 +536,7 @@
                             </scrollView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wj0-8A-2Mf" firstAttribute="width" secondItem="MZY-jA-AMC" secondAttribute="width" id="6wd-FY-vKe"/>
                             <constraint firstItem="wj0-8A-2Mf" firstAttribute="top" secondItem="GHP-3D-X8y" secondAttribute="bottom" id="CgA-JL-XcK"/>
@@ -548,6 +548,9 @@
                         <barButtonItem key="leftBarButtonItem" image="loginMe" id="j7b-QV-EGf"/>
                         <barButtonItem key="rightBarButtonItem" image="Setting" id="g7w-dX-A67"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="wj0-8A-2Mf" id="kr3-nb-FJX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tC-WN-TRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
