@@ -48,6 +48,7 @@ struct Constants {
     }
     
     struct UserInfoKey {
+        
         static let EXPRES_AT_KEY = "EXPRES_AT"
         static let LOGIN_TOKEN_KEY = "LOGIN_TOKEN"
         static let USER_NAME_KEY = "USER_NAME"
