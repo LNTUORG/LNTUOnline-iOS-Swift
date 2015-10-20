@@ -20,6 +20,9 @@ class ShowWebViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
     
+    @IBOutlet weak var actionButton: UIBarButtonItem!
+    
+    
     // MARK: - Actions
     
     @IBAction func goBack(sender: UIBarButtonItem) {
@@ -32,16 +35,18 @@ class ShowWebViewController: UIViewController, UIWebViewDelegate {
         self.webView.goForward()
     }
     
-    @IBAction func disappear(sender: UIBarButtonItem) {
-        
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func goToSafari(sender: UIBarButtonItem) {
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.webView.loadRequest(NSURLRequest.init(URL: NSURL.init(string: self.webUrl)!))
+        
+        if self.webUrl == Constants.NOTICE_URL {
+            
+            self.actionButton.enabled = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,40 +54,46 @@ class ShowWebViewController: UIViewController, UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        
+        print(error)
+    }
+    
     func webViewDidStartLoad(webView: UIWebView) {
         
-        if self.webView.canGoBack {
+        if self.webUrl == Constants.NOTICE_URL {
             
-            self.goBackButton.enabled = true
+            MBProgressHUD.showMessage("点击右上角用 Safari 访问")
         } else {
             
-            self.goBackButton.enabled = false
-        }
-        
-        if self.webView.canGoForward {
+            if self.webView.canGoBack {
+                
+                self.goBackButton.enabled = true
+            } else {
+                
+                self.goBackButton.enabled = false
+            }
             
-            self.goNextButton.enabled = true
-        } else {
+            if self.webView.canGoForward {
+                
+                self.goNextButton.enabled = true
+            } else {
+                
+                self.goNextButton.enabled = false
+            }
             
-            self.goNextButton.enabled = false
-        }
-        
-        MBProgressHUD.showMessage(Constants.Notification.LOADING)
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(3 * NSEC_PER_SEC)), dispatch_get_main_queue()) { () -> Void in
+            MBProgressHUD.showMessage(Constants.Notification.LOADING)
             
-            MBProgressHUD.hideHUD()
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(3 * NSEC_PER_SEC)), dispatch_get_main_queue()) { () -> Void in
+                
+                MBProgressHUD.hideHUD()
+            }
         }
     }
 
     func webViewDidFinishLoad(webView: UIWebView) {
         
         MBProgressHUD.hideHUD()
-    }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        
-        return true
     }
 
 }

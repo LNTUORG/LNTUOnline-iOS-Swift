@@ -78,6 +78,12 @@ class IndexViewController: BaseViewController {
         
     }
     
+    @IBAction func announce(sender: UIControl) {
+        
+        self.performSegueWithIdentifier("index2web", sender: Constants.NOTICE_URL)
+    }
+    
+    
     func setPhotoAndName() -> Void {
         
         if "" == Constants.LOGIN_TOKEN {
@@ -117,5 +123,16 @@ class IndexViewController: BaseViewController {
             }
         }
     }
-
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "index2web" {
+            
+            let con = segue.destinationViewController as! ShowWebViewController
+            
+            con.webUrl = sender as! String
+        }
+    }
 }

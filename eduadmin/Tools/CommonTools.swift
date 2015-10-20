@@ -12,6 +12,8 @@ struct Constants {
     
     static let ROOT_URL = "https://api.online.lntu.org/"
     
+    static let NOTICE_URL = "http://60.18.131.131:11180/academic/jwgg.jsp"
+    
     static let LOGIN_TOKEN = CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.LOGIN_TOKEN_KEY)
     
     static let HEADER = ["Authorization": LOGIN_TOKEN]
