@@ -19,6 +19,19 @@ struct Constants {
     struct DeveloperInfo {
         
         static let QQ = "10771533"
+        static let WEB_SITE = "https://www.pupboss.com"
+        static let WEIBO_URL = "http://www.weibo.com/yuanjingkeji"
+    }
+    
+    struct AppInfo {
+        
+        static let APP_VERSION = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+        static let FEEDBACK_URL = "https://online.lntu.org/q-a/"
+    }
+    
+    struct DateInfo {
+        
+        static let YEAR = NSCalendar.currentCalendar().components(.Year, fromDate: NSDate()).year
     }
     
     struct UserInfo {
@@ -28,10 +41,10 @@ struct Constants {
     
     struct UserInfoFilePath {
         
-        static let Documents = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String + "/"
-        static let Tmp = NSTemporaryDirectory()
-        static let USER_INFO_PATH = Documents + UserInfo.USER_NAME + "SelfInfo.plist"
-        static let USER_PHOTO_PATH = Documents + UserInfo.USER_NAME + "SelfIcon.png"
+        static let DOCUMENTS = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String + "/"
+        static let TMP = NSTemporaryDirectory()
+        static let USER_INFO_PATH = DOCUMENTS + UserInfo.USER_NAME + "SelfInfo.plist"
+        static let USER_PHOTO_PATH = DOCUMENTS + UserInfo.USER_NAME + "SelfIcon.png"
     }
     
     struct UserInfoKey {

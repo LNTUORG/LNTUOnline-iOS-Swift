@@ -18,6 +18,40 @@ class IndexViewController: BaseViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var escButton: UIBarButtonItem!
+    
+    
+    // MARK: - Actions
+    
+    @IBAction func logoutAction(sender: UIBarButtonItem) {
+        
+        let alertController = UIAlertController.init(title: nil, message: "教务处APP", preferredStyle: .ActionSheet)
+        let escAction = UIAlertAction.init(title: "退出登录", style: .Default) { (action: UIAlertAction) -> Void in
+            
+            self.performSegueWithIdentifier("index2login", sender: nil)
+        }
+        
+        
+        alertController.addAction(escAction)
+        
+        let cancelAction = UIAlertAction.init(title: "取消", style: .Cancel, handler: nil)
+        
+        alertController.addAction(cancelAction)
+        
+        alertController.modalPresentationStyle = .Popover
+        
+        alertController.popoverPresentationController?.barButtonItem = self.escButton;
+        alertController.popoverPresentationController?.sourceView = self.view;
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func settingAction(sender: UIBarButtonItem) {
+        
+        
+    }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

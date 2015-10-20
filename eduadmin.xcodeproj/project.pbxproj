@@ -30,6 +30,8 @@
 		71BD2BB31BD4861F00D6C966 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD2BB21BD4861F00D6C966 /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		71BD2BB51BD4884E00D6C966 /* IndexControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD2BB41BD4884E00D6C966 /* IndexControl.swift */; settings = {ASSET_TAGS = (); }; };
 		71BD2BB91BD5233D00D6C966 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD2BB81BD5233D00D6C966 /* Alamofire-SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		71F9C6F61BD6844A00D1666D /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F9C6F51BD6844A00D1666D /* AboutTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		71F9C6F81BD6889F00D1666D /* ShowWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F9C6F71BD6889F00D1666D /* ShowWebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		851A9375331CE147F9035C6B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D68C4CBE7E84DAA64B535F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		71BD2BB21BD4861F00D6C966 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		71BD2BB41BD4884E00D6C966 /* IndexControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexControl.swift; sourceTree = "<group>"; };
 		71BD2BB81BD5233D00D6C966 /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
+		71F9C6F51BD6844A00D1666D /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		71F9C6F71BD6889F00D1666D /* ShowWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowWebViewController.swift; sourceTree = "<group>"; };
 		73EC79C2D7F82038ED62B251 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		93D68C4CBE7E84DAA64B535F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -184,6 +188,8 @@
 				71BD2BB21BD4861F00D6C966 /* BaseViewController.swift */,
 				714C3ABB1BD1186F0061B365 /* IndexViewController.swift */,
 				714C3AB91BD118510061B365 /* LoginViewController.swift */,
+				71F9C6F51BD6844A00D1666D /* AboutTableViewController.swift */,
+				71F9C6F71BD6889F00D1666D /* ShowWebViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -466,6 +472,7 @@
 				714C3ABA1BD118510061B365 /* LoginViewController.swift in Sources */,
 				716EB64A1BD0F3A80095C4F9 /* AppDelegate.swift in Sources */,
 				712073BA1BD3E1990099CA86 /* MBProgressHUD+LJ.m in Sources */,
+				71F9C6F81BD6889F00D1666D /* ShowWebViewController.swift in Sources */,
 				71BD2BB51BD4884E00D6C966 /* IndexControl.swift in Sources */,
 				7120739F1BD211220099CA86 /* UIImageExtension.swift in Sources */,
 				71BD2BB11BD482B600D6C966 /* IndexHelloLabel.swift in Sources */,
@@ -473,6 +480,7 @@
 				714C3AB81BD116CA0061B365 /* CommonTools.swift in Sources */,
 				712073A61BD3DC7E0099CA86 /* StringExtension.swift in Sources */,
 				715703221BD104F6001DF922 /* BaseNavigationViewController.swift in Sources */,
+				71F9C6F61BD6844A00D1666D /* AboutTableViewController.swift in Sources */,
 				712073BC1BD3E1990099CA86 /* MBProgressHUD.m in Sources */,
 				714C3ABF1BD15F5F0061B365 /* CircleHeadImageView.swift in Sources */,
 				714C3ABC1BD1186F0061B365 /* IndexViewController.swift in Sources */,
