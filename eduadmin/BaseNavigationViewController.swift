@@ -41,6 +41,10 @@ class BaseNavigationViewController: UINavigationController {
         }
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        
+        return true
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

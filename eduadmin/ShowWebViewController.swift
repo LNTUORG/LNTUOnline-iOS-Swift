@@ -79,7 +79,9 @@ class ShowWebViewController: UIViewController, UIWebViewDelegate {
         
         MBProgressHUD.hideHUD()
     }
+    
     override func prefersStatusBarHidden() -> Bool {
+        
         return true
     }
 
