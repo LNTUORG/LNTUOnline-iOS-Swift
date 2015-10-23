@@ -89,6 +89,8 @@ class LoginViewController: BaseViewController {
                     
                     if dict["userType"] as! String == "STUDENT" {
                         
+                        Constants.LOGIN_TOKEN = dict["loginToken"] as! String
+                        
                         CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.LOGIN_TOKEN_KEY, value: dict["loginToken"] as! String)
                         CommonTools.storeUserDefaultValueForKey(Constants.UserInfoKey.EXPRES_AT_KEY, value: dict["expiresAt"] as! String)
                         MBProgressHUD.showSuccess("登录成功")

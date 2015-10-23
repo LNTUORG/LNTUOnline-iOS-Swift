@@ -10,5 +10,8 @@ import UIKit
 
 extension String {
     
-    var length: Int { return characters.count    }  // Swift 2.0
+    var length: Int {
+        
+        return characters.count
+    }
 }

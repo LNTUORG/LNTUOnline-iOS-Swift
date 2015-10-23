@@ -14,7 +14,7 @@ struct Constants {
     
     static let NOTICE_URL = "http://60.18.131.131:11180/academic/jwgg.jsp"
     
-    static let LOGIN_TOKEN = CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.LOGIN_TOKEN_KEY)
+    static var LOGIN_TOKEN = CommonTools.getUserDefaultValueForKey(Constants.UserInfoKey.LOGIN_TOKEN_KEY)
     
     static let HEADER = ["Authorization": LOGIN_TOKEN]
     
@@ -34,6 +34,10 @@ struct Constants {
     struct DateInfo {
         
         static let YEAR = NSCalendar.currentCalendar().components(.Year, fromDate: NSDate()).year
+        
+        static let MONTH = NSCalendar.currentCalendar().components(.Month, fromDate: NSDate()).month
+        
+        static let HOUR = NSCalendar.currentCalendar().components(.Hour, fromDate: NSDate()).hour
     }
     
     struct UserInfo {

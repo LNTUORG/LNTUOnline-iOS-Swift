@@ -47,12 +47,6 @@ class IndexViewController: BaseViewController {
         
     }
     
-    @IBAction func settingAction(sender: UIBarButtonItem) {
-        
-        
-    }
-    
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         

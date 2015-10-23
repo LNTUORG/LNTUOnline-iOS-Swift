@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vfD-0Y-RjT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vfD-0Y-RjT">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -555,7 +555,6 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="Setting" id="g7w-dX-A67">
                             <connections>
-                                <action selector="settingAction:" destination="9V8-de-gcj" id="tR9-8k-AHh"/>
                                 <segue destination="UK6-7o-ezG" kind="show" id="42e-Qz-JgB"/>
                             </connections>
                         </barButtonItem>
@@ -566,6 +565,7 @@
                         <outlet property="scrollView" destination="wj0-8A-2Mf" id="kr3-nb-FJX"/>
                         <segue destination="7Ni-eq-K25" kind="presentation" identifier="index2login" id="aFY-3z-Fag"/>
                         <segue destination="BX7-O8-gUy" kind="show" identifier="index2web" id="0qa-jP-KKr"/>
+                        <segue destination="zUN-9D-cGu" kind="show" identifier="main2schedule" id="qcN-Oe-VWJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tC-WN-TRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -823,6 +823,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CH3-l4-BkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="759" y="-495"/>
+        </scene>
+        <!--Schedule View Controller-->
+        <scene sceneID="l1X-qG-G4T">
+            <objects>
+                <viewController id="zUN-9D-cGu" customClass="ScheduleViewController" customModule="eduadmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3mW-ec-jhx"/>
+                        <viewControllerLayoutGuide type="bottom" id="X4W-KF-AgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qZ8-vw-GdW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fRs-4B-iTT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="Nbw-HO-Cu7">
+                            <connections>
+                                <action selector="reloadCourse:" destination="zUN-9D-cGu" id="Y7x-hk-w9l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVX-mV-xGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="-387"/>
         </scene>
     </scenes>
     <resources>
